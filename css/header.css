@@ -9,6 +9,7 @@
 }
 
 .header-nav ul {
+    align-content: center;
     list-style: none;
     background-color: antiquewhite;
     overflow: hidden;
