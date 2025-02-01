@@ -8,21 +8,3 @@
    margin: auto;
 }
 
-.header-nav ul {
-    align-content: center;
-    list-style: none;
-    background-color: antiquewhite;
-    overflow: hidden;
-}
-
-.header-nav li {
-    float: left;
-}
-
-.header-nav a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 15px;
-}
