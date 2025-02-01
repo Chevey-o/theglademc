@@ -5,11 +5,13 @@
 }
 
 .header-nav ul {
-    
+    list-style: none;
+    background-color: antiquewhite;
 }
 
 .header-nav a {
     color: black;
+    text-decoration: none;
     display: block;
     text-align: center;
 }
