@@ -3,3 +3,9 @@
     width: 100%;
     background-color: aliceblue;
 }
+
+.header-nav {
+    display: flex;
+    padding: 5px;
+    background-color: antiquewhite;
+}
