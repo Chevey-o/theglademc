@@ -4,6 +4,11 @@
     background-color: aliceblue;
 }
 
+.header-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-nav ul {
     list-style: none;
     background-color: antiquewhite;
