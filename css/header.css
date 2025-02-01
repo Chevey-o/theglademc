@@ -2,9 +2,16 @@
     height: 100px;
     width: 100%;
     background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-nav {
-   margin: auto;
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  background-color: antiquewhite;
 }
 
