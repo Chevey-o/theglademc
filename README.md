@@ -1,2 +1,2 @@
 # theglademc
-A website accompanying my Minecraft Community
+A website accompanying a Minecraft Community
