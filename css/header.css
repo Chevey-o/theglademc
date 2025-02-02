@@ -1,29 +1,2 @@
-.header-body {
-    height: 100px;
-    width: 100%;
-    background-color: aliceblue;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-nav {
-  height: 100%;
-  width: 100%;
-  margin: 10px;
-  background-color: antiquewhite;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.header-nav a {
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-
-}
 
