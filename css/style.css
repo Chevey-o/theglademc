@@ -1,5 +1,6 @@
 body {
     background-color: rgb(34, 34, 34);
+    align-items: center;
 }
 
 h1 {
@@ -9,7 +10,7 @@ h1 {
 }
 
 main {
-    width: 200px;
-    height: 500px;
+    width: 500px;
+    height: 10000px;
     background-color: aqua;
 }
