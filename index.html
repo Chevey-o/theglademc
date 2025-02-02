@@ -1,236 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Minecraft Server Name]</title>
-    <link rel="icon" type="image/png" href="media/favicon.png">
-    <link rel="stylesheet" href="media/style.css">
-    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="images/logo.png">
+    <meta name="description" content="Free, modern and nice web template for Minecraft server.">
+    <meta name="author" content="Astronawta">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+
+    <title>AzureMine | Home</title>
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <nav class="desktop_navbar">
-      <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
-      <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a>
-      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
-      <a href="#about" class="desktop_navbar_link scroll">About Us</a>
-      <div class="desktop_navbar_link2_div">
-          <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
-      </div>
-    </nav>
-    <div class="mobile_navbar">
-      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
-      <div id="mobile_navbar_links">
-          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a>
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">About Us</a>
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Join Us</a>
-        </div>
-        <div class="icon" onclick="mobile_navbar_link_hider()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <script>
-            function mobile_navbar_link_hider() {
-            var x = document.getElementById("mobile_navbar_links");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-            } 
-        </script>
-    </div>
-    <div class="mainflex">
-      <div class="main1">
-        <a class="main1_logo_a" href="#">
-          <img class="main1_logo" src="media/logo.png" alt="logo">
-        </a>
-        <div class="main1_description">
-          <a>Minecraft,<br>like</a>
-          <a class="main1_actcent">already done before</a><a>.</a>
-        </div>
-        <div class="main1_ipcopier_div">
-          <button class="main1_ipcopier" onclick="copyText()" type="button">
-            <span class="main1_ipcopier_text1">play.example.com</span>
-            <br>
-            <span class="main1_ipcopier_text2">Click to copy</span>
-          </button>
-          <script>
-            function copyText() {
-                navigator.clipboard.writeText
-            ("play.example.com");
-                }
-            $(document).ready(function() {
-            $('.main1_ipcopier').click(function() {
-                var popup = $('<div>', { class: 'main1_popup' })
-                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
-                $(this).after(popup);
-                setTimeout(function() {
-                popup.remove();
-                }, 1000);
-            });
-            });
-        </script>
-        </div>
-        <a href="#more" class="scroll">
-          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
-        </a>
-        <script>
-          const scrollLinks = document.querySelectorAll('.scroll');
-          scrollLinks.forEach(function(link) {
-            link.addEventListener('click', function(event) {
-              event.preventDefault();
-              const target = document.querySelector(link.getAttribute('href'));
-              const offsetTop = target.offsetTop;
-              window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-              });
-            });
-          });
-        </script>
-      </div>
-      <div id="more"></div>
-      <div class="main2">
-        <a class="headline">What we have</a>
-        <div class="main2_features_div">
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 1</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 2</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 3</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 4</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 5</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-        </div>
-      </div>
-      <div id="discord"></div>
-      <div class="main4">
-        <a class="headline">Join the Discord</a>
-        <div class="main4_dc_div">
-          <iframe class="main4_dc_widget" src="https://imgur.com/78RPeUY.png" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-          <div class="main4_dc_description_div">
-            <a class="main4_dc_description_title">Let's talk!</a>
-            <a class="main4_dc_description"> ・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
-            <a href="https://discord.gg/INVITE" class="main4_dc_button_a">
-              <div class="main4_dc_button">Join</div>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="menu-mobile">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Server logo" class="logo-img">
+                    <h3 class="server-name">ExampleName</h3>
+                </div>
             </a>
-          </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-      </div>
-      <div id="about"></div>
-      <div class="main5">
-        <a class="headline">Who we are</a>
-        <div class="main5_admin_div">
-          <div class="main5_admins_div main5_admins_dev_type2">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
-            <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
-              <a class="main5_admins_description_title" href="https://example.com">Owner Name</a>
-              <a class="main5_admins_description">Owner<br>description</a>
-            </div>
-          </div>
-          <div class="main5_admins_div main5_admins_dev_type1">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
-            <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
-              <a class="main5_admins_description_title" href="https://example.com">Admin Name</a>
-              <a class="main5_admins_description">Admin<br>description</a>
-            </div>
-          </div>
+
+        <div class="links">
+            <a href="#" class="link active">Home</a>
+            <a href="rules.html" class="link">Rules</a>
+            <a href="admin-team.html" class="link">Admin-Team</a>
+            <a href="contact.html" class="link">Contact</a>
         </div>
-        <div class="main5_supporter_div">
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 1</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 2</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 3</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 4</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="join"></div>
-      <div class="main3">
-        <a class="headline">How to join</a>
-        <div class="main3_join_div_div">
-          <div class="main3_join_div">
-            <a class="main3_join_title">Java</a>
-            <div class="main3_join_content_div">
-              <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Version:</a>
-              </div>
-              <div class="main3_join_values">
-                <a>play.example.com</a>
-                <a>1.20.1</a>
-              </div>
-            </div>
-          </div>
-          <!--
-          <div class="main3_join_div">
-            <a class="main3_join_title">Bedrock</a>
-            <div class="main3_join_content_div">
-              <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Port:</a>
-              </div>
-              <div class="main3_join_values">
-                <a>be.example.com</a>
-                <a>69420</a>
-              </div>
-            </div>
-          </div>
-          -->
-        </div>
-      </div>
     </div>
-    <footer class="copyright_div">
-      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by Chev 2025</a>
+
+    <!--Header-->
+    <section id="header">
+        <div class="content">
+
+            <div class="left">
+                <div class="server-name">
+                    <p>Survival Minecraft Server</p>
+                    <h1 class="minecraft-server-ip">mc.example.com</h1>
+                </div>
+                <p class="server-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, consectetur explicabo. Dolor enim inventore minus neque officiis.
+                    <br><br>Join and play with your friends.
+                </p>
+                <div class="buttons">
+                    <button class="copy-ip">Copy IP</button>
+                    <a href="#about"><button class="how-to-join">Show more</button></a>
+                </div>
+                <p class="ip-copied">IP was successfully copied!</p>
+            </div>
+
+            <div class="right">
+                <img src="images/logo.png" alt="Server logo" class="logo-img logo-img-header">
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="icon">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                        <div class="texts">
+                            <h5 class="stat-title">Discord server</h5>
+                            <p><span class="stat-number discord-online-users">None</span> users online</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="texts">
+                            <h5 class="stat-title">Minecraft server</h5>
+                            <p><span class="stat-number minecraft-online-players">None</span> players online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About us-->
+    <section id="about">
+        <div class="content">
+            <div class="left">
+                <h2 class="section-title">Who we are?</h2>
+                <p class="about-us">Lörem ipsum tosk nedust hemiktigt ifall hubot, och haför. Vagt antevynat. Antivaxxare krana: liksom monoktigt ide i ubel. Mikroktig dovis preliga, ogt. Dihagen säs såvis nun. Dra åt helvete-kapital sana inklusive orat i kock för realingar. Biledes. Antik möligt. Antev jyling astropp. Antroponetik förstärkt verklighet, om curlingförälder. Andronetik bityr. Mivoling. Dov vygåd sarat megara. Tematisk intras då töning. Koka böcker debev. Mivoling. Dov vygåd sarat megara. Tematisk intras då töning. Koka böcker debev. Mivoling. Dov vygåd sarat megara. Tematisk intras då töning. Koka böcker </p>
+            </div>
+
+            <div class="right">
+                <img src="images/about-section-person-image.png" alt="Minecraft person">
+                <div class="img-background"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Mini games-->
+    <section id="minigames">
+        <div class="content miniGames-list">
+            <div class="game">
+                <img src="images/survival-minigames-image.jpg" alt="Survival image">
+
+                <div class="info">
+                    <h2 class="section-title">Survival</h2>
+                    <div class="game-description">
+                        <p>Lörem ipsum tosk nedust hemiktigt ifall hubot, och haför. Vagt antevynat. Antivaxxare krana: liksom monoktigt ide i ubel. Mikroktig dovis preliga, ogt. Dihagen säs såvis nun. Dra åt helvete-kapital sana </p>
+                        <ul class="services">
+                            <li class="service">Economy</li>
+                            <li class="service">SlimeFun</li>
+                            <li class="service">Player Warps</li>
+                            <li class="service">and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <img src="images/survival-minigames-image.jpg" alt="Survival image">
+
+                <div class="info">
+                    <h2 class="section-title">SkyBlock</h2>
+                    <div class="game-description">
+                        <p>Lörem ipsum tosk nedust hemiktigt ifall hubot, och haför. Vagt antevynat. Antivaxxare krana: liksom monoktigt ide i ubel. Mikroktig dovis preliga, ogt. Dihagen säs såvis nun. Dra åt helvete-kapital sana </p>
+                        <ul class="services">
+                            <li class="service">Economy</li>
+                            <li class="service">SlimeFun</li>
+                            <li class="service">Player Warps</li>
+                            <li class="service">and more</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Discord-->
+    <section id="discord">
+        <div class="content">
+            <h2 class="section-title">Have a <span>problem</span> or want to get in touch with others? <br> Join our <span>Discord!</span></h2>
+            <a href="#" class="discord-link"><button class="join-discord">Join Discord</button></a>
+        </div>
+    </section>
+
+    <!--Vote (max 2 vote sites)-->
+    <section id="vote">
+        <div class="content">
+            <div class="info">
+                <h2 class="section-title">Why vote?</h2>
+                <p class="section-description">Lörem ipsum tosk nedust hemiktigt ifall hubot, och haför. Vagt antevynat. Antivaxxare krana: liksom monoktigt ide i ubel. Mikroktig dovis preliga, ogt. Dihagen säs såvis nun. Dra åt helvete</p>
+            </div>
+
+            <div class="links voteLinks">
+                <a href="#" class="url">
+                    <div class="link">
+                        <h5>servers-minecraft</h5>
+                        <div class="link-description">
+                            <p class="description">Lörem ipsum tosk nedust hemiktigt ifall hubot, hubot ifall.</p>
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="url">
+                    <div class="link">
+                        <h5>planetminecraft</h5>
+                        <div class="link-description">
+                            <p class="description">Lörem ipsum tosk nedust hemiktigt ifall hubot, hubot ifall.</p>
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--FAQs-->
+    <section id="faq">
+        <div class="content">
+            <div class="info">
+                <h2 class="section-title">Server <span>FAQs.</span></h2>
+                <p class="section-description">Lörem ipsum tosk nedust hemiktigt ifall hubot, och haför. Vagt antevynat. Antivaxxare krana: liksom monoktigt ide i ubel. Mikroktig dovis preliga, ogt. Dihagen säs såvis nun. Dra åt helvete</p>
+            </div>
+
+            <div class="accordion faqList">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure. Klittra tidögt och soment, viradade utivis. Sebina hedersvåld profavis. Hurade gon vimöde. Lörem Sebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. Lörem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure. Klittra tidögt och soment, viradade utivis. Sebina hedersvåld profavis. Hurade gon vimöde. Lörem Sebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. Lörem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure. Klittra tidögt och soment, viradade utivis. Sebina hedersvåld profavis. Hurade gon vimöde. Lörem Sebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. Lörem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Lörem ipsum pongar valig pede, tisade. Tilåskapet decijål ifall sar pure. Klittra tidögt och soment, viradade utivis. Sebina hedersvåld profavis. Hurade gon vimöde. Lörem Sebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. LöremSebina hedersvåld profavis. Hurade gon vimöde. Lörem
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer">
+        <p class="copyright">&copy; 2023 <span class="server-name-footer">ExampleName</span>. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="link tiktok-link"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="link instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" class="link discord-link-footer"><i class="fa-brands fa-discord"></i></a>
+        </div>
     </footer>
-  </body>
+</body>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/cbf5ee59c8.js" crossorigin="anonymous"></script>
 </html>
