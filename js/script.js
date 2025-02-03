@@ -46,10 +46,10 @@ const config = {
     adminTeamPage: {
         leaders: [
             {
-                inGameName: "ChevLeftEarth",
+                inGameName: "ChevLeftUs",
                 rank: "Organizer",
                 skinUrlOrPathToFile: "",
-                rankColor: "rgba(255, 3, 3, 1)"
+                rankColor: "rgb(101, 255, 104)"
             },
             
         ],
