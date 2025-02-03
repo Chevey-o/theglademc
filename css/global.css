@@ -16,13 +16,13 @@
   --description-color: #D2D0D0;
 
   --green-color: #4AFF6B;
-  --ip-copied-background: rgba(74, 255, 107, 0.68);
-  --ip-copied-icon-background: rgba(74, 255, 107, 0.5);
+  --ip-copied-background: #66c278;
+  --ip-copied-icon-background: #66c278;
 
-  --copy-ip-button-background: rgba(113, 255, 125, 0.824);
+  --copy-ip-button-background: #66c278;
   --how-to-join-button-background: rgba(210, 208, 208, 0.2);
   --stats-background: rgba(210, 208, 208, 0.05);
-  --stat-icon-background-2: rgba(78, 255, 113, 0.779);
+  --stat-icon-background-2: #66c278;
 
   --scroll-bar: rgba(210, 208, 208, 0.3);
   --scroll-bar-hover: #555555FF;
