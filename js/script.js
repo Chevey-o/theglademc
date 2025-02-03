@@ -164,8 +164,9 @@ const config = {
                 rankColor: ""
             }
         ]
+              */
     },
-    */
+  
 
     /*
     Contact form
