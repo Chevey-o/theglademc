@@ -38,7 +38,7 @@ const config = {
     */
     userSKinTypeInAdminTeam: "bust", /*[full, bust, head, face, front, frontFull, skin]*/
     atGroupsDefaultColors: {
-        leaders: "rgba(255, 124, 124, 0.5)",
+        leaders: "rgba(110, 255, 129, 0.75)",
         developers: "rgba(230, 83, 0, 0.5)",
         helpers: "rgba(11, 175, 255, 0.5)",
         builders: "rgba(247, 2, 176, 0.5)",
@@ -46,30 +46,16 @@ const config = {
     adminTeamPage: {
         leaders: [
             {
-                inGameName: "Astronavta",
-                rank: "Owner",
+                inGameName: "ChevLeftEarth",
+                rank: "Organizer",
                 skinUrlOrPathToFile: "",
                 rankColor: "rgba(255, 3, 3, 1)"
             },
-            {
-                inGameName: "Astronavta",
-                rank: "Owner",
-                skinUrlOrPathToFile: "",
-                rankColor: "rgba(255, 3, 3, 1)"
-            },
-            {
-                inGameName: "Astronavta",
-                rank: "Manager",
-                skinUrlOrPathToFile: "",
-                rankColor: ""
-            },
-            {
-                inGameName: "Astronavta",
-                rank: "Moderator",
-                skinUrlOrPathToFile: "",
-                rankColor: ""
-            }
+            
         ],
+    
+        
+        /*
         developers: [
             {
                 inGameName: "Astronavta",
@@ -96,6 +82,9 @@ const config = {
                 rankColor: ""
             }
         ],
+        */
+
+        /*
         helpers: [
             {
                 inGameName: "Astronavta",
@@ -134,6 +123,9 @@ const config = {
                 rankColor: ""
             }
         ],
+        */
+
+        /*
         builders: [
             {
                 inGameName: "Astronavta",
@@ -173,6 +165,7 @@ const config = {
             }
         ]
     },
+    */
 
     /*
     Contact form
