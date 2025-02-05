@@ -51,6 +51,13 @@ const config = {
                 skinUrlOrPathToFile: "",
                 rankColor: "#66c278"
             },
+
+            {
+                inGameName: "Venom_Games",
+                rank: "Organizer",
+                skinUrlOrPathToFile: "",
+                rankColor: "#66c278"
+            },
             
         ],
     
