@@ -65,6 +65,13 @@ const config = {
                 skinUrlOrPathToFile: "",
                 rankColor: "#66c278"
             },
+
+            {
+                inGameName: "DiziiYT",
+                rank: "Organizer",
+                skinUrlOrPathToFile: "",
+                rankColor: "#66c278"
+            },
         ],
     
         
