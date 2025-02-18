@@ -58,7 +58,7 @@ const config = {
                 skinUrlOrPathToFile: "",
                 rankColor: "#66c278"
             },
-            
+          /*  
             {
                 inGameName: "Bimrix_",
                 rank: "Organizer",
@@ -71,7 +71,7 @@ const config = {
                 rank: "Organizer",
                 skinUrlOrPathToFile: "",
                 rankColor: "#66c278"
-            },
+            },*/
         ],
     
         
